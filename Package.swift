@@ -10,7 +10,7 @@ import AppleProductTypes
 let package = Package(
     name: "Blue Proxim",
     platforms: [
-        .iOS("16.0")
+        .iOS("17.0")
     ],
     products: [
         .iOSApplication(
@@ -18,7 +18,7 @@ let package = Package(
             targets: ["AppModule"],
             bundleIdentifier: "com.alenjo.Blue-Proxim",
             teamIdentifier: "843A8K2LPK",
-            displayVersion: "1.0",
+            displayVersion: "2.0",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .pencil),
             accentColor: .presetColor(.brown),

@@ -1,14 +1,6 @@
-//
-//  BluetoothViewModel.swift
-//
-//  Now, I'm doing the magic of managing states from my Models to the Views
-//
-//  Created by Alen Jo on 12/31/25.
-//
-
 import SwiftUI
 import Combine
-
+import SwiftData
 
 @MainActor
 class BluetoothViewModel : ObservableObject
@@ -19,6 +11,7 @@ class BluetoothViewModel : ObservableObject
     @Published var isScanning: Bool = false
     
     // private props
+    private var modelContext: ModelContext?
     private let bluetoothService: BluetoothServiceProtocol
     private var cancellables = Set<AnyCancellable>()
     
@@ -39,14 +32,66 @@ class BluetoothViewModel : ObservableObject
         setupBindings()
     }
     
+    func setModelContext(_ context: ModelContext)
+    {
+        self.modelContext = context
+    }
+    
     private func setupBindings()
     {
         bluetoothService.devicePublisher
             .receive(on: DispatchQueue.main)
             .sink { [weak self] device in
                 self?.devices.append(device)
+                self?.saveDevice(device)
             }
             .store(in: &cancellables)
+    }
+    
+    private func saveDevice(_ device: BluetoothDevice)
+    {
+        guard let context = modelContext else { return }
+        
+        let descriptor = FetchDescriptor<SavedDevice>(
+            predicate: #Predicate { $0.id == device.id }
+        )
+        
+        do {
+            let existingDevices = try context.fetch(descriptor)
+            
+            if let savedDevice = existingDevices.first
+            {
+                savedDevice.lastSeen = Date()
+                savedDevice.timesDetected += 1
+                
+                let sighting = DeviceSighting(rssi: device.rssi, proximity: device.proximity.rawValue)
+                sighting.device = savedDevice
+                context.insert(sighting)
+                
+                let allRSSI = savedDevice.sightings.map { Double($0.rssi )}
+            } else {
+                let savedDevice = SavedDevice(
+                    id: device.id,
+                    name: device.name
+                )
+                savedDevice.averageRSSI = Double(device.rssi)
+                
+                let sighting = DeviceSighting(
+                    rssi: device.rssi,
+                    proximity: device.proximity.rawValue
+                )
+                sighting.device = savedDevice
+                
+                context.insert(savedDevice)
+                context.insert(sighting)
+    
+            }
+            
+            try context.save()
+            
+        } catch {
+            print("Error saving device: \(error)")
+        }
     }
     
     func startScanning()

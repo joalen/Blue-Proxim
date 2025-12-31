@@ -1,8 +1,26 @@
 import SwiftUI
+import SwiftData
+
+struct MainTabView: View {
+    var body: some View {
+        TabView {
+            ContentView()
+                .tabItem {
+                    Label("Radar", systemImage: "dot.radiowaves.left.and.right")
+                }
+            
+            DeviceHistoryView()
+                .tabItem {
+                    Label("History", systemImage: "clock")
+                }
+        }
+    }
+}
 
 struct ContentView : View
 {
     @StateObject private var viewModel = BluetoothViewModel()
+    @Environment(\.modelContext) private var modelContext
     
     var body: some View
     {
@@ -35,6 +53,7 @@ struct ContentView : View
         )
         .onAppear
         {
+            viewModel.setModelContext(modelContext)
             viewModel.startScanning()
         }
     }
