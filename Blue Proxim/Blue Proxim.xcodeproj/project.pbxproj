@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B0D67012F06299700B48469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D67002F06299700B48469 /* ContentView.swift */; };
+		7B59FFDC2F062B1900208D0B /* DeviceInfoPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFC72F062B1900208D0B /* DeviceInfoPrompt.swift */; };
+		7B59FFDD2F062B1900208D0B /* BluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFC92F062B1900208D0B /* BluetoothDevice.swift */; };
+		7B59FFDE2F062B1900208D0B /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFCA2F062B1900208D0B /* BluetoothManager.swift */; };
+		7B59FFDF2F062B1900208D0B /* DeviceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFCB2F062B1900208D0B /* DeviceModels.swift */; };
+		7B59FFE12F062B1900208D0B /* BluetoothViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFCF2F062B1900208D0B /* BluetoothViewModel.swift */; };
+		7B59FFE22F062B1900208D0B /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFD12F062B1900208D0B /* DeviceDetailView.swift */; };
+		7B59FFE32F062B1900208D0B /* DeviceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFD22F062B1900208D0B /* DeviceHistoryView.swift */; };
+		7B59FFE42F062B1900208D0B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFD32F062B1900208D0B /* HeaderView.swift */; };
+		7B59FFE52F062B1900208D0B /* LegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFD42F062B1900208D0B /* LegendView.swift */; };
+		7B59FFE62F062B1900208D0B /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFD52F062B1900208D0B /* RadarView.swift */; };
+		7B59FFE72F062B1900208D0B /* RadarWithBluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFD62F062B1900208D0B /* RadarWithBluetoothView.swift */; };
+		7B59FFE92F062B1900208D0B /* Blue_Proxim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFD92F062B1900208D0B /* Blue_Proxim.swift */; };
+		7B59FFEA2F062B1900208D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59FFDA2F062B1900208D0B /* ContentView.swift */; };
+		7B59FFEE2F062B8900208D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B59FFED2F062B8900208D0B /* Assets.xcassets */; };
+		7B59FFF12F062BB800208D0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B59FFF02F062BB800208D0B /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B0D66FB2F06299700B48469 /* Blue Proxim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Proxim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0D67002F06299700B48469 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B59FFC72F062B1900208D0B /* DeviceInfoPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoPrompt.swift; sourceTree = "<group>"; };
+		7B59FFC92F062B1900208D0B /* BluetoothDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDevice.swift; sourceTree = "<group>"; };
+		7B59FFCA2F062B1900208D0B /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		7B59FFCB2F062B1900208D0B /* DeviceModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceModels.swift; sourceTree = "<group>"; };
+		7B59FFCF2F062B1900208D0B /* BluetoothViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothViewModel.swift; sourceTree = "<group>"; };
+		7B59FFD12F062B1900208D0B /* DeviceDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		7B59FFD22F062B1900208D0B /* DeviceHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceHistoryView.swift; sourceTree = "<group>"; };
+		7B59FFD32F062B1900208D0B /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7B59FFD42F062B1900208D0B /* LegendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegendView.swift; sourceTree = "<group>"; };
+		7B59FFD52F062B1900208D0B /* RadarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
+		7B59FFD62F062B1900208D0B /* RadarWithBluetoothView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarWithBluetoothView.swift; sourceTree = "<group>"; };
+		7B59FFD92F062B1900208D0B /* Blue_Proxim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blue_Proxim.swift; sourceTree = "<group>"; };
+		7B59FFDA2F062B1900208D0B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B59FFED2F062B8900208D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B59FFF02F062BB800208D0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B0D66F82F06299700B48469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B0D66F22F06299700B48469 = {
+			isa = PBXGroup;
+			children = (
+				7B0D66FD2F06299700B48469 /* Blue Proxim */,
+				7B0D66FC2F06299700B48469 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B0D66FC2F06299700B48469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B0D66FB2F06299700B48469 /* Blue Proxim.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B0D66FD2F06299700B48469 /* Blue Proxim */ = {
+			isa = PBXGroup;
+			children = (
+				7B59FFEF2F062BB800208D0B /* Preview Content */,
+				7B59FFED2F062B8900208D0B /* Assets.xcassets */,
+				7B59FFDA2F062B1900208D0B /* ContentView.swift */,
+				7B59FFD92F062B1900208D0B /* Blue_Proxim.swift */,
+				7B59FFD72F062B1900208D0B /* Views */,
+				7B59FFD02F062B1900208D0B /* ViewModels */,
+				7B59FFCC2F062B1900208D0B /* Models */,
+				7B59FFC82F062B1900208D0B /* Helpers */,
+				7B0D67002F06299700B48469 /* ContentView.swift */,
+			);
+			path = "Blue Proxim";
+			sourceTree = "<group>";
+		};
+		7B59FFC82F062B1900208D0B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7B59FFC72F062B1900208D0B /* DeviceInfoPrompt.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7B59FFCC2F062B1900208D0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B59FFC92F062B1900208D0B /* BluetoothDevice.swift */,
+				7B59FFCA2F062B1900208D0B /* BluetoothManager.swift */,
+				7B59FFCB2F062B1900208D0B /* DeviceModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B59FFD02F062B1900208D0B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B59FFCF2F062B1900208D0B /* BluetoothViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7B59FFD72F062B1900208D0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B59FFD12F062B1900208D0B /* DeviceDetailView.swift */,
+				7B59FFD22F062B1900208D0B /* DeviceHistoryView.swift */,
+				7B59FFD32F062B1900208D0B /* HeaderView.swift */,
+				7B59FFD42F062B1900208D0B /* LegendView.swift */,
+				7B59FFD52F062B1900208D0B /* RadarView.swift */,
+				7B59FFD62F062B1900208D0B /* RadarWithBluetoothView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B59FFEF2F062BB800208D0B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7B59FFF02F062BB800208D0B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B0D66FA2F06299700B48469 /* Blue Proxim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B0D67092F06299900B48469 /* Build configuration list for PBXNativeTarget "Blue Proxim" */;
+			buildPhases = (
+				7B0D66F72F06299700B48469 /* Sources */,
+				7B0D66F82F06299700B48469 /* Frameworks */,
+				7B0D66F92F06299700B48469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blue Proxim";
+			productName = "Blue Proxim";
+			productReference = 7B0D66FB2F06299700B48469 /* Blue Proxim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B0D66F32F06299700B48469 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					7B0D66FA2F06299700B48469 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 7B0D66F62F06299700B48469 /* Build configuration list for PBXProject "Blue Proxim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B0D66F22F06299700B48469;
+			productRefGroup = 7B0D66FC2F06299700B48469 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B0D66FA2F06299700B48469 /* Blue Proxim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B0D66F92F06299700B48469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B59FFF12F062BB800208D0B /* Preview Assets.xcassets in Resources */,
+				7B59FFEE2F062B8900208D0B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B0D66F72F06299700B48469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0D67012F06299700B48469 /* ContentView.swift in Sources */,
+				7B59FFDC2F062B1900208D0B /* DeviceInfoPrompt.swift in Sources */,
+				7B59FFE72F062B1900208D0B /* RadarWithBluetoothView.swift in Sources */,
+				7B59FFDD2F062B1900208D0B /* BluetoothDevice.swift in Sources */,
+				7B59FFDF2F062B1900208D0B /* DeviceModels.swift in Sources */,
+				7B59FFE12F062B1900208D0B /* BluetoothViewModel.swift in Sources */,
+				7B59FFE52F062B1900208D0B /* LegendView.swift in Sources */,
+				7B59FFE42F062B1900208D0B /* HeaderView.swift in Sources */,
+				7B59FFE92F062B1900208D0B /* Blue_Proxim.swift in Sources */,
+				7B59FFE62F062B1900208D0B /* RadarView.swift in Sources */,
+				7B59FFEA2F062B1900208D0B /* ContentView.swift in Sources */,
+				7B59FFDE2F062B1900208D0B /* BluetoothManager.swift in Sources */,
+				7B59FFE32F062B1900208D0B /* DeviceHistoryView.swift in Sources */,
+				7B59FFE22F062B1900208D0B /* DeviceDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7B0D67072F06299900B48469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B0D67082F06299900B48469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B0D670A2F06299900B48469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blue Proxim/Preview Content\"";
+				DEVELOPMENT_TEAM = 843A8K2LPK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alenjo.Blue-Proxim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B0D670B2F06299900B48469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blue Proxim/Preview Content\"";
+				DEVELOPMENT_TEAM = 843A8K2LPK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alenjo.Blue-Proxim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B0D66F62F06299700B48469 /* Build configuration list for PBXProject "Blue Proxim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0D67072F06299900B48469 /* Debug */,
+				7B0D67082F06299900B48469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B0D67092F06299900B48469 /* Build configuration list for PBXNativeTarget "Blue Proxim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0D670A2F06299900B48469 /* Debug */,
+				7B0D670B2F06299900B48469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B0D66F32F06299700B48469 /* Project object */;
+}

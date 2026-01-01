@@ -51,9 +51,9 @@ class BluetoothViewModel : ObservableObject
     private func saveDevice(_ device: BluetoothDevice)
     {
         guard let context = modelContext else { return }
-        
+        let deviceID = device.id
         let descriptor = FetchDescriptor<SavedDevice>(
-            predicate: #Predicate { $0.id == device.id }
+            predicate: #Predicate { $0.id == deviceID }
         )
         
         do {

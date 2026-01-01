@@ -16,7 +16,7 @@ let package = Package(
         .iOSApplication(
             name: "Blue Proxim",
             targets: ["AppModule"],
-            bundleIdentifier: "com.alenjo.Blue-Proxim",
+            bundleIdentifier: "com.alenjo.blueproxim",
             teamIdentifier: "843A8K2LPK",
             displayVersion: "2.0",
             bundleVersion: "1",
